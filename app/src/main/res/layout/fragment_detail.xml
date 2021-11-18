@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    tools:context=".View.DetailFragment">
+
+
+    <ImageView
+        android:id="@+id/imageDetail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/indomaret"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+
+
+       app:cardCornerRadius="15dp"
+
+        app:layout_constraintTop_toBottomOf="@id/imageDetail">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvJudulDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:text="Toko B"
+                android:textSize="20dp"
+
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tvJalanDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="jalan merah no 25"
+                android:textSize="15dp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvJudulDetail" />
+
+            <TextView
+                android:id="@+id/tipeOutline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="tipe outlet : "
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvJalanDetail" />
+
+            <TextView
+                android:id="@+id/tvIsiOutlet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16dp"
+                android:text="(data)"
+                app:layout_constraintStart_toEndOf="@+id/tipeOutline"
+                app:layout_constraintTop_toBottomOf="@+id/tvJalanDetail" />
+
+
+            <TextView
+                android:id="@+id/tipeDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="tipe outlet :"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvIsiOutlet" />
+
+
+            <TextView
+                android:id="@+id/tvIsiDisiplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="8dp"
+                android:text="(data)"
+                app:layout_constraintStart_toEndOf="@+id/tipeDisplay"
+                app:layout_constraintTop_toBottomOf="@+id/tvIsiOutlet" />
+
+            <TextView
+                android:id="@+id/subTypeDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="sub tipe display :"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvIsiDisiplay" />
+
+            <TextView
+                android:id="@+id/tvIsiSubTypleDisiplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="(data)"
+                app:layout_constraintStart_toEndOf="@+id/subTypeDisplay"
+                app:layout_constraintTop_toBottomOf="@+id/tvIsiDisiplay" />
+
+
+            <TextView
+                android:id="@+id/Ertm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="ERTM"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvIsiSubTypleDisiplay" />
+
+
+            <TextView
+                android:id="@+id/TvErtm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="(data)"
+                app:layout_constraintStart_toEndOf="@+id/subTypeDisplay"
+                app:layout_constraintTop_toBottomOf="@+id/tvIsiSubTypleDisiplay" />
+
+
+            <TextView
+                android:id="@+id/Pareto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+
+                android:text="Pareto"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emen" />
+
+
+            <TextView
+                android:id="@+id/TvPareto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="16dp"
+                android:text="(data)"
+                app:layout_constraintStart_toEndOf="@+id/Pareto"
+                app:layout_constraintTop_toBottomOf="@+id/TvEmen" />
+
+            <TextView
+                android:id="@+id/emen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+
+                android:text="Pareto"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Ertm" />
+
+            <TextView
+                android:id="@+id/TvEmen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="8dp"
+                android:text="(data)"
+                app:layout_constraintStart_toEndOf="@+id/emen"
+                app:layout_constraintTop_toBottomOf="@+id/TvErtm" />
+
+            <Button
+                android:id="@+id/btnNOVisit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="16dp"
+                android:text="No Visit"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Pareto" />
+
+            <Button
+                android:id="@+id/btnVisit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="172dp"
+                android:layout_marginTop="4dp"
+
+
+                android:text="Visit"
+                app:layout_constraintStart_toEndOf="@+id/btnNOVisit"
+                app:layout_constraintTop_toBottomOf="@+id/TvPareto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.sidiq.toko.View.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFragment_to_visitFragment"
+            app:destination="@id/visitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tokoFragment"
+        android:name="com.sidiq.toko.View.TokoFragment"
+        android:label="fragment_toko"
+        tools:layout="@layout/fragment_toko" >
+        <action
+            android:id="@+id/action_tokoFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/visitFragment"
+        android:name="com.sidiq.toko.View.VisitFragment"
+        android:label="fragment_visit"
+        tools:layout="@layout/fragment_visit" >
+        <action
+            android:id="@+id/action_visitFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.sidiq.toko.View.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_tokoFragment"
+            app:destination="@id/tokoFragment" />
+    </fragment>
+</navigation>
